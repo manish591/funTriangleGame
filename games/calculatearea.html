@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate area game</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculateareacontainer">
+            <button class="goback"><a href="/index.html">Home</a></button>
+            <h1 class="gametitle">Calculate Area</h1>
+            <p class="gamedescription">Below are various options, click one of hem to find the area of triangle.</p>
+            <div class="formula">
+                <button class="formulaone"> If you have base and height length</button>
+                <button class="formulaone"> If you have length of 3 sides</button>
+                <button class="formulaone"> If you have length of 2 sides and included angle</button>
+            </div>
+
+            <div class="formulaonedisplayed">
+                <img src="" alt="">
+                <div class="inputs">
+                    <label for="base">base=
+                        <input  id="base" type="number" class="base" min="1">
+                    </label>
+                    <label for="height">height=
+                        <input  id="height" type="number" class="height" min="1">
+                    </label>
+            </div>
+            <button class="submitangle">Submit</button>
+            <h2 class="outputofangleoftriangle">ss</h2>
+        </div>
+
+        <div class="formulatwodisplayed hide">
+            <img src="" alt="">
+            <div class="inputs">
+                <label for="firstside">a=
+                    <input  id="firstside" type="number" class="firstside" min="1">
+                </label>
+                <label for="secondside">b=
+                    <input  id="secondside" type="number" class="secondside" min="1">
+                </label>
+                <label for="thirdside">c=
+                    <input  id="thirdside" type="number" class="thirdside" min="1">
+                </label>
+        </div>
+        <button class="submitangle">Submit</button>
+        <h2 class="outputofangleoftriangle">ss</h2>
+        </div>
+
+        <div class="formulathreedisplayed hide">
+            <img src="" alt="">
+                <div class="inputs">
+                    <label for="bsecond">b=
+                        <input  id="bsecond" type="number" class="bsecond" min="1">
+                    </label>
+                    <label for="afirst">c=
+                        <input  id="afirst" type="number" class="afirst" min="1">
+                    </label>
+                    <label for="angle">angle=
+                        <input  id="angle" type="number" class="angle" min="1">
+                    </label>
+            </div>
+            <button class="submitangle">Submit</button>
+            <h2 class="outputofangleoftriangle">ss</h2>
+        </div>
+
+    </div>
+</body>
+</html>
