@@ -13,39 +13,68 @@
             <button class="goback"><a href="/index.html">Home</a></button>
             <h1 class="gametitle">Triangle Quiz</h1>
             <p class="gamedescription">Take this traingle quiz. For each correct answer you will be awarded with 1 score. For incorrect you won't do negative marking.</p>
-            <button class="startquiz">Start</button>
-            <ul class="questions">
-               <!-- <li class="question">
+            <form class="quizform">
+               <div class="question">
                    <p>1.If a triangle has angles 1350, 150, 300. Is it an obtuse triangle?</p>
-               </li>
-               <li class="question">
+                   <label for="q1_o1">
+                       <input type="radio" id="q1_o1" value="answer-1" name="question_1">Yes
+                   </label>
+                   <label for="q1_o2">
+                    <input type="radio" id="q1_o2" value="answer-2" name="question_1">no
+                </label>
+               </div>
+
+               <div class="question">
                    <p>2. If a triangle has angles 1150, 250, 400. Is it an acute triangle?</p>
-               </li>
-               <li class="question">
+                   <label for="q3">
+                    <input type="radio" id="q3" value="answer-1" name="question_2">Yes
+                   </label>
+                   <label for="q4">
+                    <input type="radio" id="q4" value="answer-2" name="question_2">no
+                 </label>
+               </div>
+
+               <div class="question">
                    <p>3. If a triangle has angles 900, 600, 300. Is it a right angle triangle?</p>
-               </li>
-               <li class="question">
+                   <button class="options">yes</button>
+                   <button class="options">no</button>
+               </div>
+               <div class="question">
                    <p>4. A triangle has angles 600, 600, 600. Is it an equilateral triangle?</p>
-               </li>
-               <li class="question">
+                   <button class="options">yes</button>
+                   <button class="options">no</button>
+               </div>
+               <div class="question">
                    <p>5. If a triangle has angles 250, 750, 800. Is it an acute triangle?</p>
-               </li>
-               <li class="question">
+                   <button class="options">yes</button>
+                   <button class="options">no</button>
+               </div>
+               <div class="question">
                    <p>6. If a triangle has 2 sides with equal lengths and 750 angle between them. What is the type of triangle?</p>
-               </li>
-               <li class="question">
+                   <button class="options">yes</button>
+                   <button class="options">no</button>
+                </div>
+               <div class="question">
                    <p>7. If a triangle has 2 angles of 750. What is the measure of third angle in degree?</p>
-               </li>
-               <li class="question">
+                   <button class="options">yes</button>
+                   <button class="options">no</button>
+                </div>
+               <div class="question">
                    <p>8. If a triangle has 2 sides with equal lengths and 600 angle between them. What is the type of triangle?</p>
-               </li>
-               <li class="question">
+                   <button class="options">yes</button>
+                   <button class="options">no</button>
+                </div>
+               <div class="question">
                    <p>9. The perimeter of an equilateral triangle is 15cm. What is the length of one side?</p>
-               </li>
-               <li class="question">
+                   <button class="options">yes</button>
+                   <button class="options">no</button>
+                </div>
+               <div class="question">
                    <p>10. If a triangle has sides of 2cm, 3cm, 4cm, what is the type of triangle?</p>
-               </li> -->
-           </ul>
+                   <button class="options">yes</button>
+                   <button class="options">no</button>
+                </div>
+            </form>
             <button class="submitangle">Submit</button>
             <h2 class="outputofangleoftriangle">ss</h2>
         </div>
