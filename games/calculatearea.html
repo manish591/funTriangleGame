@@ -14,59 +14,60 @@
             <h1 class="gametitle">Calculate Area</h1>
             <p class="gamedescription">Below are various options, click one of hem to find the area of triangle.</p>
             <div class="formula">
-                <button class="formulaone"> If you have base and height length</button>
-                <button class="formulaone"> If you have length of 3 sides</button>
-                <button class="formulaone"> If you have length of 2 sides and included angle</button>
+                <button class="formulaone one"> If you have base and height length</button>
+                <button class="formulaone two"> If you have length of 3 sides</button>
+                <button class="formulaone three"> If you have length of 2 sides and included angle</button>
             </div>
 
-            <div class="formulaonedisplayed">
+            <div class="formulaonedisplayed hide">
                 <img src="" alt="">
-                <div class="inputs">
+                <div class="inputs calculateareainputs">
                     <label for="base">base=
-                        <input  id="base" type="number" class="base" min="1">
+                        <input  id="base" type="number" class="base input1" min="1">
                     </label>
                     <label for="height">height=
-                        <input  id="height" type="number" class="height" min="1">
+                        <input  id="height" type="number" class="height input1" min="1">
                     </label>
             </div>
-            <button class="submitangle">Submit</button>
-            <h2 class="outputofangleoftriangle">ss</h2>
+            <button class="submitangle form">Submit</button>
+            <h2 class="outputofangleoftriangle"></h2>
         </div>
 
         <div class="formulatwodisplayed hide">
             <img src="" alt="">
-            <div class="inputs">
+            <div class="inputs calculateareainputs">
                 <label for="firstside">a=
-                    <input  id="firstside" type="number" class="firstside" min="1">
+                    <input  id="firstside" type="number" class="firstside input2" min="1">
                 </label>
                 <label for="secondside">b=
-                    <input  id="secondside" type="number" class="secondside" min="1">
+                    <input  id="secondside" type="number" class="secondside input2" min="1">
                 </label>
                 <label for="thirdside">c=
-                    <input  id="thirdside" type="number" class="thirdside" min="1">
+                    <input  id="thirdside" type="number" class="thirdside input2" min="1">
                 </label>
         </div>
-        <button class="submitangle">Submit</button>
-        <h2 class="outputofangleoftriangle">ss</h2>
+        <button class="submitangle form">Submit</button>
+        <h2 class="outputofangleoftriangle"></h2>
         </div>
 
         <div class="formulathreedisplayed hide">
             <img src="" alt="">
-                <div class="inputs">
+                <div class="inputs calculateareainputs">
                     <label for="bsecond">b=
-                        <input  id="bsecond" type="number" class="bsecond" min="1">
+                        <input  id="bsecond" type="number" class="bsecond input3" min="1">
                     </label>
                     <label for="afirst">c=
-                        <input  id="afirst" type="number" class="afirst" min="1">
+                        <input  id="afirst" type="number" class="afirst input3" min="1">
                     </label>
                     <label for="angle">angle=
-                        <input  id="angle" type="number" class="angle" min="1">
+                        <input  id="angle" type="number" class="onlyangle input3" min="1">
                     </label>
             </div>
-            <button class="submitangle">Submit</button>
-            <h2 class="outputofangleoftriangle">ss</h2>
+            <button class="submitangle calculteareasubmit form">Submit</button>
+            <h2 class="outputofangleoftriangle"></h2>
         </div>
 
     </div>
+    <script src="/src/calculatearea.js"></script>
 </body>
 </html>
