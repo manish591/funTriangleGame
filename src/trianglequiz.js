@@ -1,22 +1,25 @@
-const questionList = document.querySelector('.questions')
-const startQuiz = document.querySelector('.startquiz');
-const question = document.querySelectorAll('.question');
-const options = document.querySelector('.options')
-const submit = document.querySelector('.submitangle')
-
+let triangleQuizForm = document.forms[0];
+const btn = document.querySelector('.submitangle');
+const questionContainer = document.querySelectorAll('.question');
+const output = document.querySelector('.outputofangleoftriangle');
 
 let score = 0;
-let answers = ['yes', 'no', 'yes', 'no', 'yes', 'no', 'yes', 'no', 'yes', 'no']
 
-    options.addEventListener('click', () => {
-        let i = 0;
-        question.forEach(item => {
-            if (options.innerText === answers[i]) {
-                score++;
-            }
-        })
+let correctAnswer = ['answer-1', 'answer-1', 'answer-1', 'answer-1', 'answer-1', 'answer-1', 'answer-1', 'answer-1', 'answer-1', 'answer-1'];
+
+triangleQuizForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const questionData = new FormData(triangleQuizForm);
+    let i = 0;
+    questionData.forEach(item => {
+        console.log(item)
+        if(item == correctAnswer[i]) {
+            questionContainer[i].style.backgroundColor = 'lightgreen';
+            score++;
+        } else {
+            questionContainer[i].style.backgroundColor = 'red'
+        }
         i++;
-    })
-
-
-console.log(score)
+    }) 
+    output.innerText = `Your score is ${score}`;
+})
