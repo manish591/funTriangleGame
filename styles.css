@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-    background-color: #E6EFF6;
+    background-color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,15 +22,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #2BB3B1;
+    background-color: #EDF2F4;
     padding: 15px 10px;
     box-shadow: 4px 4px 9px rgba(49, 49, 49, 0.438);
+    color: #2B2D42;
 }
 
 input {
     display: inline;
     width: 25%;
     padding: 15px 5px;
+    border: 1px solid black;
 }
 
 input::placeholder {
@@ -42,12 +46,25 @@ input::placeholder {
     margin-top: 5vh;
 }
 
-.goback , .submitangle {
+.submitangle {
+    padding: 12px 25px;
+    margin: 5vh 0;
+    border: 1px solid rgba(58, 57, 57, 0.274);
+    background-color: #EF233C;
+    color: white;
+}
+
+.goback {
     padding: 7px 15px;
     margin: 5vh 0;
     border: 1px solid rgba(58, 57, 57, 0.274);
-    background-color: #BFDF32;
 }
+
+.goback a {
+    color: black;
+    text-decoration: none;
+}
+
 
 .outputofangleoftriangle {
     width: 100%;
@@ -70,15 +87,17 @@ li {
 }
 
 .question {
-    background-color: chartreuse;
+    background-color: #3B413C;
     padding: 10px;
     margin-top: 3vh;
+    color: white;
 }
 
 .formulaone {
     padding: 10px 5px;
-    width: 20vw;
+    text-align: left;
     margin-top: 5vh;
+    width: 80%;
 }
 
 .formula {
@@ -113,41 +132,115 @@ li {
 }
 
 .title {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 2.5rem;
     text-align: center;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #3B413C;
+}
+
+.gametitle {
+    font-family: 'Barlow', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #3B413C;
+}
+
+.gamedescription {
+    color: #3B413C;
 }
 
 .quizone, .quiztwo, .quizthree, .quizfour {
     border: 1px solid black;
     padding: 25px 30px;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    width: 48%;
+    height: 20vh;
+    margin-left: 1px;
     margin-top: 5vh;
+    box-shadow: 3px 3px 8px rgba(61, 60, 60, 0.493);
+    background-color: #94D1BE;
 }
-
 
 
 .gameContainer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .gameContainer a {
     text-decoration: none;
-    color: black;
+    color: #3B413C;
     text-align: center;
 }
 
-.gameContainer a:hover {
-    background-color: burlywood;
+
+footer {
+    background-color: #DAF0EE;
 }
+
+.connect {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20vh;
+}
+
+.footerlink {
+    margin-top: 3vh;
+}
+
+.footerlink a {
+    margin-right: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.gamedescription {
+    text-align: center;
+}
+
+.calculateareacontainer, .hypoteneuscontainer, .trianglequizcontainer {
+    width: 90vw;
+    margin: 0 auto;
+    background-color: #EDF2F4;
+    padding: 5px 10px;
+    box-shadow: 3px 3px 8px rgba(54, 54, 54, 0.527);
+}
+
+.calculateareacontainer .gamedescription, .hypoteneuscontainer .gamedescription, .trianglequizcontainer .gamedescription {
+    text-align: left;
+}
+ 
 
 
 @media only screen and (min-width: 700px) {
     .container {
         width: 50vw;
     }
+
+    .quizone, .quiztwo, .quizthree, .quizfour {
+        width: 35%;
+        max-height: 200px;
+    }
+
+    .gameContainer {
+        width: 80%;
+        margin: 10vh auto;
+    }
+
+    .gamedescription {
+        width: 25vw;
+    }
+
+    .calculateareacontainer, .hypoteneuscontainer, .trianglequizcontainer{
+        width: 50vw;
+        margin: 0 auto;
+        background-color: #EDF2F4;
+        padding: 5px 10px;
+        box-shadow: 3px 3px 8px rgba(54, 54, 54, 0.527);
+    }
+
 }
