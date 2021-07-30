@@ -5,7 +5,7 @@ const output = document.querySelector('.outputofangleoftriangle');
 
 let score = 0;
 
-let correctAnswer = ['answer-1', 'answer-1', 'answer-1', 'answer-1', 'answer-1', 'answer-1', 'answer-1', 'answer-1', 'answer-1', 'answer-1'];
+let correctAnswer = ['answer-1', 'answer-2', 'answer-2', 'answer-2', 'answer-2', 'answer-3', 'answer-3', 'answer-1', 'answer-1', 'answer-3'];
 
 triangleQuizForm.addEventListener('submit', (e) => {
     e.preventDefault();

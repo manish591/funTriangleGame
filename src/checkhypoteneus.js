@@ -4,11 +4,25 @@ const output = document.querySelector('.outputofangleoftriangle');
 
 
 function checkHypoteneus (valOne, valTwo) {
+    output.style.color = 'black';
+
     if (valOne.value === '' || valTwo.value === '') {
         output.innerText = 'Please Enter a value!'
         output.style.color = 'red';
         return;
     }
+
+    if(Number(valOne.value) === 0 || Number(valTwo.value) === 0) {
+        output.innerText = 'Please Enter a value greater than zero!'
+        output.style.color = 'red';
+        return;
+    } 
+
+    if(Math.sign(Number(valOne.value)) === -1 || Math.sign(Number(valTwo.value)) === -1) {
+        output.innerText = 'Please Enter a value greater than zero!'
+        output.style.color = 'red';
+        return;
+    } 
 
     let a = Number(valOne.value);
     let b = Number(valTwo.value);

@@ -213,8 +213,26 @@ footer {
 .calculateareacontainer .gamedescription, .hypoteneuscontainer .gamedescription, .trianglequizcontainer .gamedescription {
     text-align: left;
 }
- 
 
+
+.triangleimg {
+    width: 40%;
+    margin-top: 5vh;
+}
+
+.question p {
+    margin-bottom: 3vh;
+}
+
+[type= "radio"] {
+   box-sizing: border-box;
+   margin: 3px 5px 10px 5px;
+   width: 12px;
+}
+
+label {
+    display: flex;
+}
 
 @media only screen and (min-width: 700px) {
     .container {
@@ -241,6 +259,10 @@ footer {
         background-color: #EDF2F4;
         padding: 5px 10px;
         box-shadow: 3px 3px 8px rgba(54, 54, 54, 0.527);
+    }
+
+    .quizform {
+        margin-top: 8vh;
     }
 
 }
