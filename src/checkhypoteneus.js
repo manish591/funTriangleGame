@@ -26,7 +26,7 @@ function checkHypoteneus (valOne, valTwo) {
 
     let a = Number(valOne.value);
     let b = Number(valTwo.value);
-    output.innerText = Math.sqrt((a * b) + (b * a)) + 'sq-meter';
+    output.innerText = Math.sqrt((a * a) + (b * b)) + 'sq-meter';
 }
 
 submitBtn.addEventListener('click', () => checkHypoteneus(input1[0], input1[1]));

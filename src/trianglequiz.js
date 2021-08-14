@@ -6,9 +6,8 @@ const output = document.querySelector('.outputofangleoftriangle');
 let score = 0;
 
 let correctAnswer = ['answer-1', 'answer-2', 'answer-2', 'answer-2', 'answer-2', 'answer-3', 'answer-3', 'answer-1', 'answer-1', 'answer-3'];
-
-triangleQuizForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+triangleQuizForm.addEventListener('submit', (event) => {
+    event.preventDefault();
     const questionData = new FormData(triangleQuizForm);
     let i = 0;
     questionData.forEach(item => {
@@ -22,4 +21,5 @@ triangleQuizForm.addEventListener('submit', (e) => {
         i++;
     }) 
     output.innerText = `Your score is ${score}`;
-})
+    score = 0;
+});
