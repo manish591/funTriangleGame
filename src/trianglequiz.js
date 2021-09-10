@@ -9,17 +9,20 @@ let correctAnswer = ['answer-1', 'answer-2', 'answer-2', 'answer-2', 'answer-2',
 triangleQuizForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const questionData = new FormData(triangleQuizForm);
+    console.log(questionData.values())
     let i = 0;
-    questionData.forEach(item => {
-        console.log(item)
-        if(item == correctAnswer[i]) {
+
+    for(let entry of questionData.values()) {
+        console.log(entry);
+        if(entry === correctAnswer[i]) {
             questionContainer[i].style.backgroundColor = 'lightgreen';
             score++;
         } else {
             questionContainer[i].style.backgroundColor = 'red'
         }
         i++;
-    }) 
+    }
     output.innerText = `Your score is ${score}`;
     score = 0;
+    btn.style.display = 'none';
 });
